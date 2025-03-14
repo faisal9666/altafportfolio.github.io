@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altaf Raza - Civil Architect</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#2C3E50',
+secondary: '#E67E22'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.slide-in {
+opacity: 0;
+transform: translateY(50px);
+transition: all 0.6s ease-out;
+}
+.slide-in.active {
+opacity: 1;
+transform: translateY(0);
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #E67E22;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+</style>
+</head>
+<body class="font-['Poppins'] bg-gray-50">
+<nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<a href="#" class="text-2xl font-bold text-primary">Sarah Anderson</a>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#home" class="nav-link text-gray-700 hover:text-primary">Home</a>
+<a href="#projects" class="nav-link text-gray-700 hover:text-primary">Projects</a>
+<a href="#experience" class="nav-link text-gray-700 hover:text-primary">Experience</a>
+<a href="#education" class="nav-link text-gray-700 hover:text-primary">Education</a>
+<a href="#testimonials" class="nav-link text-gray-700 hover:text-primary">Testimonials</a>
+<a href="#contact" class="nav-link text-gray-700 hover:text-primary">Contact</a>
+</div>
+<button class="md:hidden text-gray-700">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</div>
+</div>
+</nav>
+<section id="home" class="min-h-screen bg-cover bg-center relative" style="background-image: url('https://public.readdy.ai/ai/img_res/7dc5c9fc24b81fd06f6bd9c61716b890.jpg')">
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
+<div class="grid md:grid-cols-2 gap-12 items-center min-h-screen">
+<div class="text-white">
+<h1 class="text-5xl font-bold mb-6">Crafting Spaces, Building Dreams</h1>
+<p class="text-xl mb-8">Award-winning civil architect with 5+ years of experience in sustainable design and urban development.</p>
+<div class="flex space-x-4">
+<button class="!rounded-button bg-secondary text-white px-6 py-3 hover:bg-secondary/90 transition">View Projects</button>
+<button class="!rounded-button bg-green-500 text-white px-6 py-3 hover:bg-green-600 transition flex items-center">
+<i class="ri-whatsapp-line mr-2"></i>WhatsApp
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 slide-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Featured Projects</h2>
+<p class="text-gray-600">Showcasing innovative architectural solutions and sustainable designs</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="slide-in">
+<div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+<img src="https://public.readdy.ai/ai/img_res/98371283aac1984dcfdfc2eaaa41255d.jpg" alt="Project 1" class="w-full h-64 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">Eco Business Center</h3>
+<p class="text-gray-600 mb-4">A LEED Platinum certified commercial complex featuring sustainable design elements and smart building technology.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary">Completed 2024</span>
+<button class="!rounded-button bg-primary text-white px-4 py-2 hover:bg-primary/90 transition">View Details</button>
+</div>
+</div>
+</div>
+</div>
+<div class="slide-in">
+<div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+<img src="https://public.readdy.ai/ai/img_res/7b6be5ae155181dc4108335667dfa619.jpg" alt="Project 2" class="w-full h-64 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">BKC Kurla</h3>
+<p class="text-gray-600 mb-4">Luxury residential complex featuring smart home integration and sustainable living spaces.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary">Completed 2023</span>
+<button class="!rounded-button bg-primary text-white px-4 py-2 hover:bg-primary/90 transition">View Details</button>
+</div>
+</div>
+</div>
+</div>
+<div class="slide-in">
+<div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+<img src="https://public.readdy.ai/ai/img_res/38291e6ad4571d4a60a7982c6f3daa8e.jpg" alt="Project 3" class="w-full h-64 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">Cultural Arts Center</h3>
+<p class="text-gray-600 mb-4">A multi-purpose cultural venue designed to celebrate local arts and foster community engagement.</p>
+<div class="flex justify-between items-center">
+<span class="text-secondary">Completed 2024</span>
+<button class="!rounded-button bg-primary text-white px-4 py-2 hover:bg-primary/90 transition">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 slide-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Professional Experience</h2>
+<p class="text-gray-600">A decade of excellence in architectural innovation</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="slide-in">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-building-2-line text-3xl text-primary"></i>
+</div>
+<div class="ml-4">
+<h3 class="text-xl font-bold text-primary">Senior Architect</h3>
+<p class="text-gray-600">BKC Kurla</p>
+<p class="text-secondary">2020 - Present</p>
+</div>
+</div>
+<ul class="space-y-2 text-gray-600">
+<li>• Led sustainable design initiatives for major commercial projects</li>
+<li>• Managed team of 15 architects and designers</li>
+<li>• Received 3 international design awards</li>
+</ul>
+</div>
+</div>
+<div class="slide-in">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-building-line text-3xl text-primary"></i>
+</div>
+<div class="ml-4">
+<h3 class="text-xl font-bold text-primary">Project Architect</h3>
+<p class="text-gray-600">Phoenix Kurla</p>
+<p class="text-secondary">2015 - 2020</p>
+</div>
+</div>
+<ul class="space-y-2 text-gray-600">
+<li>• Designed award-winning cultural centers and museums</li>
+<li>• Specialized in parametric design and digital fabrication</li>
+<li>• Coordinated with international clients and stakeholders</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="education" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 slide-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Education & Certifications</h2>
+<p class="text-gray-600">Academic excellence and professional development</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="slide-in">
+<div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-graduation-cap-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Master of Architecture</h3>
+<p class="text-gray-600">Bandra Graduate School of Design</p>
+<p class="text-secondary mt-2">2015</p>
+</div>
+</div>
+<div class="slide-in">
+<div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-building-4-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Bachelor of Architecture</h3>
+<p class="text-gray-600">Sion School of Architecture</p>
+<p class="text-secondary mt-2">2013</p>
+</div>
+</div>
+<div class="slide-in">
+<div class="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-award-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">LEED AP Certification</h3>
+<p class="text-gray-600">Mumbai Building Council</p>
+<p class="text-secondary mt-2">2016</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="testimonials" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 slide-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Client Testimonials</h2>
+<p class="text-gray-600">What our clients say about our work</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="slide-in">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://public.readdy.ai/ai/img_res/46405b027e73c474942d2bca36a99167.jpg" alt="Client 1" class="w-16 h-16 rounded-full object-cover">
+<div class="ml-4">
+<h3 class="text-xl font-bold text-primary">faisal</h3>
+<p class="text-gray-600">CEO, Global Developments</p>
+</div>
+</div>
+<p class="text-gray-600 italic">"Altaf's innovative approach to sustainable design transformed our corporate headquarters into a beacon of modern architecture. Her attention to detail and commitment to excellence exceeded our expectations."</p>
+</div>
+</div>
+<div class="slide-in">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://public.readdy.ai/ai/img_res/e746a7ae6bd61f3ea8108d28dc9a1d0a.jpg" alt="Client 2" class="w-16 h-16 rounded-full object-cover">
+<div class="ml-4">
+<h3 class="text-xl font-bold text-primary">Sara ali Khan</h3>
+<p class="text-gray-600">Director, Arts Foundation</p>
+</div>
+</div>
+<p class="text-gray-600 italic">"Working with Altaf on our cultural center was an incredible experience. Her vision perfectly captured our mission while creating a space that truly inspires creativity and community engagement."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 slide-in">
+<h2 class="text-4xl font-bold text-primary mb-4">Get in Touch</h2>
+<p class="text-gray-600">Let's discuss your next project</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<div class="slide-in">
+<form class="space-y-6">
+<div>
+<label class="block text-gray-700 mb-2">Name</label>
+<input type="text" class="w-full px-4 py-2 rounded-button border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+</div>
+<div>
+<label class="block text-gray-700 mb-2">Email</label>
+<input type="email" class="w-full px-4 py-2 rounded-button border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+</div>
+<div>
+<label class="block text-gray-700 mb-2">Message</label>
+<textarea rows="4" class="w-full px-4 py-2 rounded-button border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none"></textarea>
+</div>
+<button class="!rounded-button bg-primary text-white px-6 py-3 hover:bg-primary/90 transition w-full">Send Message</button>
+</form>
+</div>
+<div class="slide-in">
+<div class="bg-gray-100 p-8 rounded-lg h-full">
+<h3 class="text-2xl font-bold text-primary mb-6">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-center">
+<i class="ri-linkedin-fill text-2xl text-primary mr-4"></i>
+<p class="text-gray-600">linkedin.com/in/altaf-raza</p>
+</div>
+<div class="flex items-center">
+<i class="ri-instagram-fill text-2xl text-primary mr-4"></i>
+<p class="text-gray-600">@altaf.raza.architect</p>
+</div>
+<div class="flex items-center">
+<i class="ri-mail-fill text-2xl text-primary mr-4"></i>
+<p class="text-gray-600">altaf.raza@gmail.com</p>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="text-lg font-bold text-primary mb-4">Let's Connect</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition">
+<i class="ri-gmail-line text-xl text-primary"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition">
+<i class="ri-linkedin-line text-xl text-primary"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition">
+<i class="ri-instagram-line text-xl text-primary"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-primary text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-3 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4">Altaf Raza</h3>
+<p class="text-gray-300">Creating sustainable architectural solutions for tomorrow's world.</p>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#home" class="text-gray-300 hover:text-white transition">Home</a></li>
+<li><a href="#projects" class="text-gray-300 hover:text-white transition">Projects</a></li>
+<li><a href="#experience" class="text-gray-300 hover:text-white transition">Experience</a></li>
+<li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Services</h3>
+<ul class="space-y-2">
+<li class="text-gray-300">Architectural Design</li>
+<li class="text-gray-300">Urban Planning</li>
+<li class="text-gray-300">Interior Design</li>
+<li class="text-gray-300">Sustainable Solutions</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-12 pt-8 text-center">
+<p class="text-gray-300">© 2025 Altaf Raza. All rights reserved. <br>Made With  &#10084  By Faisal Yaseen.</p>
+
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const slideInElements = document.querySelectorAll('.slide-in');
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('active');
+}
+});
+}, { threshold: 0.1 });
+slideInElements.forEach(element => {
+observer.observe(element);
+});
+const mobileMenuButton = document.querySelector('.md\\:hidden');
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'md:hidden fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 ease-in-out';
+mobileMenu.innerHTML = `
+<div class="p-4">
+<div class="flex justify-end">
+<button class="text-gray-700 mobile-menu-close">
+<i class="ri-close-line text-2xl"></i>
+</button>
+</div>
+<div class="flex flex-col space-y-4 mt-8">
+<a href="#home" class="text-gray-700 hover:text-primary px-4 py-2">Home</a>
+<a href="#projects" class="text-gray-700 hover:text-primary px-4 py-2">Projects</a>
+<a href="#experience" class="text-gray-700 hover:text-primary px-4 py-2">Experience</a>
+<a href="#education" class="text-gray-700 hover:text-primary px-4 py-2">Education</a>
+<a href="#testimonials" class="text-gray-700 hover:text-primary px-4 py-2">Testimonials</a>
+<a href="#contact" class="text-gray-700 hover:text-primary px-4 py-2">Contact</a>
+<button class="!rounded-button bg-primary text-white px-4 py-2 hover:bg-primary/90 transition flex items-center justify-center">
+<i class="ri-download-line mr-2"></i>Download CV
+</button>
+<button class="!rounded-button bg-green-500 text-white px-4 py-2 hover:bg-green-600 transition flex items-center justify-center">
+<i class="ri-whatsapp-line mr-2"></i>WhatsApp
+</button>
+</div>
+</div>
+`;
+document.body.appendChild(mobileMenu);
+mobileMenuButton.addEventListener('click', () => {
+mobileMenu.classList.remove('translate-x-full');
+});
+document.querySelector('.mobile-menu-close').addEventListener('click', () => {
+mobileMenu.classList.add('translate-x-full');
+});
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', () => {
+mobileMenu.classList.add('translate-x-full');
+});
+});
+});
+</script>
+</body>
+</html>
